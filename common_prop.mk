@@ -102,14 +102,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.vbat.enable=true \
     vendor.audio.feature.wsa.enable=false
 
-ifneq ($(filter jason,$(TARGET_DEVICE)),)
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.audio.feature.spkr_prot.enable=false
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.audio.feature.spkr_prot.enable=true
-endif
-
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.bluetooth.a2dp_offload.disabled=false \
@@ -128,7 +120,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.privapp.list=org.codeaurora.snapcam \
     persist.vendor.camera.dual.isp.sync=0 \
     persist.vendor.camera.HAL3.enabled=1 \
-    persist.vendor.camera.eis.enable=1 \
     persist.vendor.camera.exif.make=Xiaomi \
     persist.vendor.camera.privapp.list=org.codeaurora.snapcam \
     vendor.camera.aux.packageblacklist=com.discord \
