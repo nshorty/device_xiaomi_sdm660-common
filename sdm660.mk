@@ -484,8 +484,8 @@ PRODUCT_PACKAGES += \
     telephony-ext
 
 # RIL JAR
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
