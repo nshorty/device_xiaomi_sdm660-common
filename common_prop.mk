@@ -174,6 +174,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.cabl=0 \
     ro.sf.blurs_are_expensive=1 \
     ro.surface_flinger.supports_background_blur=1 \
+    persist.sys.sf.disable_blurs=1 \
     vendor.display.disable_skip_validate=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.video.disable.ubwc=1 \
